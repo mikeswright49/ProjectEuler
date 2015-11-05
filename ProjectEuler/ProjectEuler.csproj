@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D30E1A30-921B-4B9D-A560-4571AAC6E1E7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectEuler</RootNamespace>
+    <AssemblyName>ProjectEuler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IProblem.cs" />
+    <Compile Include="Problems\Problem27.cs" />
+    <Compile Include="Problems\Problem35.cs" />
+    <Compile Include="Problems\Problem10.cs" />
+    <Compile Include="Problems\Problem11.cs" />
+    <Compile Include="Problems\Problem12.cs" />
+    <Compile Include="Problems\Problem13.cs" />
+    <Compile Include="Problems\Problem14.cs" />
+    <Compile Include="Problems\Problem15.cs" />
+    <Compile Include="Problems\Problem16.cs" />
+    <Compile Include="Problems\Problem19.cs" />
+    <Compile Include="Problems\Problem20.cs" />
+    <Compile Include="Problems\Problem21.cs" />
+    <Compile Include="Problems\Problem22.cs" />
+    <Compile Include="Problems\Problem23.cs" />
+    <Compile Include="Problems\Problem24.cs" />
+    <Compile Include="Problems\Problem25.cs" />
+    <Compile Include="Problems\Problem26.cs" />
+    <Compile Include="Problems\Problem28.cs" />
+    <Compile Include="Problems\Problem29.cs" />
+    <Compile Include="Problems\Problem30.cs" />
+    <Compile Include="Problems\Problem31.cs" />
+    <Compile Include="Problems\Problem32.cs" />
+    <Compile Include="Problems\Problem33.cs" />
+    <Compile Include="Problems\Problem34.cs" />
+    <Compile Include="Problems\Problem36.cs" />
+    <Compile Include="Problems\Problem37.cs" />
+    <Compile Include="Problems\Problem38.cs" />
+    <Compile Include="Problems\Problem39.cs" />
+    <Compile Include="Problems\Problem40.cs" />
+    <Compile Include="Problems\Problem41.cs" />
+    <Compile Include="Problems\Problem42.cs" />
+    <Compile Include="Problems\Problem43.cs" />
+    <Compile Include="Problems\Problem44.cs" />
+    <Compile Include="Problems\Problem45.cs" />
+    <Compile Include="Problems\Problem46.cs" />
+    <Compile Include="Problems\Problem47.cs" />
+    <Compile Include="Problems\Problem48.cs" />
+    <Compile Include="Problems\Problem49.cs" />
+    <Compile Include="Problems\Problem50.cs" />
+    <Compile Include="Problems\Problem09.cs" />
+    <Compile Include="Problems\Problem51.cs" />
+    <Compile Include="Problems\Problem52.cs" />
+    <Compile Include="Problems\Problem53.cs" />
+    <Compile Include="Problems\Problem54.cs" />
+    <Compile Include="Problems\Problem55.cs" />
+    <Compile Include="Problems\Problem56.cs" />
+    <Compile Include="Problems\Problem57.cs" />
+    <Compile Include="Problems\Problem58.cs" />
+    <Compile Include="Problems\Problem59.cs" />
+    <Compile Include="Problems\Problem60.cs" />
+    <Compile Include="Problems\Problem61.cs" />
+    <Compile Include="Problems\Problem62.cs" />
+    <Compile Include="Problems\Problem63.cs" />
+    <Compile Include="Problems\Problem64.cs" />
+    <Compile Include="Problems\Problem65.cs" />
+    <Compile Include="Problems\Problem66.cs" />
+    <Compile Include="Problems\Problem67.cs" />
+    <Compile Include="Problems\Problem68.cs" />
+    <Compile Include="Problems\Problem69.cs" />
+    <Compile Include="Problems\Problem71.cs" />
+    <Compile Include="Problems\Problem72.cs" />
+    <Compile Include="Problems\Problem73.cs" />
+    <Compile Include="Problems\Problem74.cs" />
+    <Compile Include="Problems\Problem75.cs" />
+    <Compile Include="Problems\Problem76.cs" />
+    <Compile Include="Problems\Problem77.cs" />
+    <Compile Include="Problems\Problem78.cs" />
+    <Compile Include="Problems\Problem79.cs" />
+    <Compile Include="Problems\Problem80.cs" />
+    <Compile Include="Problems\Problem81.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\BigDecimal.cs" />
+    <Compile Include="Utilities\PrimeGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\p022_names.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\p042_words.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\p054_poker.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\p059_cipher.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\p067_triangle.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\p079_keylog.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
