@@ -18,6 +18,9 @@ For the first one hundred natural numbers, find the total of the digital sums of
  * 
  * x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}=x_n-\frac{x_n^2-S}{2x_n}=\frac{1}{2}\left(x_n+\frac{S}{x_n}\right)
  * 
+ * For the babylonian method to work you need to do n=11 for correct convergence at 100 digits
+ * 
+ * 
  * */
 namespace ProjectEuler.Problems
 {
@@ -35,7 +38,7 @@ namespace ProjectEuler.Problems
                 BigDecimal xn1 = new BigDecimal(0, 0);
                 BigDecimal s = new BigDecimal(i, 0);
                 
-                for (int q = 0; q < 50; q++)
+                for (int q = 0; q < 11; q++)
                 {
                     xn1 = .5 * ((xn) + (s / xn));
                     xn = xn1;

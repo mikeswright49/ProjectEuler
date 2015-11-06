@@ -114,6 +114,7 @@
     <Compile Include="Problems\Problem79.cs" />
     <Compile Include="Problems\Problem80.cs" />
     <Compile Include="Problems\Problem81.cs" />
+    <Compile Include="Problems\Problem82.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\BigDecimal.cs" />
@@ -138,6 +139,10 @@
     <Content Include="Files\p079_keylog.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Files\p081_matrix.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\p082_matrix.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

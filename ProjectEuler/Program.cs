@@ -12,7 +12,7 @@ namespace ProjectEuler
         public static void Main(string[] args)
         {
             DateTime start = DateTime.Now;
-            IProblem problem = new Problem80();
+            IProblem problem = new Problem81();
 
             string answer = problem.Run();
             double milliseconds = (DateTime.Now - start).TotalMilliseconds;
