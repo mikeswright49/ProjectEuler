@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,36 @@ namespace ProjectEuler.Problems
     {
         public string Run()
         {
-            throw new NotImplementedException();
+            string[] keys = File.ReadAllLines(Environment.CurrentDirectory + @"\Files\p082_matrix.txt");
+            long[][] matrix = new long[keys.Length][];
+            int count = keys.Length;
+            for (int i = 0; i < keys.Length; i++)
+            {
+                matrix[i] = keys[i].Split(',').Select(x => Convert.ToInt64(x)).ToArray();
+            }
+            for (int i = count - 2; i >= 0; i--)
+            {
+                for (int x = count - 1; x >= 0; x--)
+                {
+                    if (x == 0)
+                        matrix[x][i] += matrix[x][i + 1];
+                    else
+                    {
+                        matrix[x][i] += Math.Min(matrix[x - 1][i] + matrix[x - 1][i + 1], matrix[x][i + 1]);
+                    }
+
+                }
+            }
+
+            long min = Int32.MaxValue;
+
+            for(int x=0; x<matrix.Length; x++){
+                if (matrix[x][0] < min)
+                    min = matrix[x][0];
+            }
+
+
+            return min.ToString();
         }
     }
 }
